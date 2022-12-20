@@ -6,13 +6,15 @@ import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MotionEvent;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageView logo;
+    Button signBut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +23,18 @@ public class MainActivity extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
-        logo=findViewById(R.id.logo);
+        logo=findViewById(R.id.Logo);
         animate(logo);
+
+        signBut=findViewById(R.id.signBut);
+        signBut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = null;
+                intent = new Intent(MainActivity.this, SignActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void animate(ImageView name) {
