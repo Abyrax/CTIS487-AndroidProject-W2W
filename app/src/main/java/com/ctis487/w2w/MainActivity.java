@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements TouchType {
         });
 
         loginBut=findViewById(R.id.loginBut);
-        signBut.setOnClickListener(new View.OnClickListener() {
+        loginBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = null;
