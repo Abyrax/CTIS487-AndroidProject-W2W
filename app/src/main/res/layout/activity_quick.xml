@@ -10,10 +10,10 @@
     <Button
         android:id="@+id/backBut"
         style="?attr/materialIconButtonStyle"
-        android:layout_width="46dp"
+        android:layout_width="52dp"
         android:layout_height="54dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="B"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,11 @@
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="22dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

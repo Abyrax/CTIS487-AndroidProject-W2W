@@ -4,8 +4,8 @@ public class Serie extends Content{
     int season;
     int episode;
 
-    public Serie(String itemName, String companyName, String type, int imgID,int year,int season,int episode) {
-        super(itemName, companyName, type, imgID,year);
+    public Serie(String itemName, String companyName, String type, int imgID,int compID,int year,int season,int episode) {
+        super(itemName, companyName, type, imgID,compID,year);
         this.season=season;
         this.episode=episode;
     }

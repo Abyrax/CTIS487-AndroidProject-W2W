@@ -1,7 +1,6 @@
 package com.ctis487.w2w;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,9 +56,11 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView
         if(getItemViewType(position) == TYPE_MOVIE){
             //STEP7
             MovieItemHolder itemHolder= (MovieItemHolder) viewItemHolder;
-            itemHolder.tvItemMovieCompanyName.setText(con.getItemName());
-            itemHolder.tvItemMovieType.setText(con.getType());
-            itemHolder.imgItemMovieImg.setImageResource(con.getImgID());
+            itemHolder.movieName.setText(con.getItemName());
+            itemHolder.movieType.setText(con.getType());
+            itemHolder.movieYear.setText(String.valueOf(con.getYear()));
+            itemHolder.movieIMG.setImageResource(con.getImgID());
+            itemHolder.compIMG.setImageResource(con.getCompID());
 
             //STEP8
             itemHolder.parentLayout.setOnClickListener(new View.OnClickListener() {
@@ -74,9 +75,11 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView
             //STEP7
 
             SeriesItemHolder itemHolder = (SeriesItemHolder)viewItemHolder;
-            itemHolder.tvItemSeriesCompanyName.setText(con.getItemName());
-            itemHolder.tvItemSeriesType.setText(con.getType());
-            itemHolder.imgItemSeriesImg.setImageResource(con.getImgID());
+            itemHolder.movieName.setText(con.getItemName());
+            itemHolder.movieType.setText(con.getType());
+            itemHolder.movieYear.setText(String.valueOf(con.getYear()));
+            itemHolder.movieIMG.setImageResource(con.getImgID());
+            itemHolder.compIMG.setImageResource(con.getCompID());
 
             //STEP8
             itemHolder.parentLayout.setOnClickListener(new View.OnClickListener() {
@@ -106,30 +109,34 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView
 
     //STEP2
     class MovieItemHolder extends RecyclerView.ViewHolder{
-        TextView tvItemMovieCompanyName, tvItemMovieType;
-        ImageView imgItemMovieImg;
+        TextView movieName, movieType, movieYear;
+        ImageView movieIMG, compIMG;
         ConstraintLayout parentLayout;
 
         public MovieItemHolder(@NonNull View itemView) {
             super(itemView);
-            tvItemMovieCompanyName = itemView.findViewById(R.id.tvItemMovieCompanyName);
-            tvItemMovieType=itemView.findViewById(R.id.tvItemMovieType);
-            imgItemMovieImg= itemView.findViewById(R.id.tvItemMovieImg);
+            movieName = itemView.findViewById(R.id.movieName);
+            movieType=itemView.findViewById(R.id.movieType);
+            movieYear=itemView.findViewById(R.id.movieYear);
+            movieIMG=itemView.findViewById(R.id.movieIMG);
+            compIMG=itemView.findViewById(R.id.compIMG);
             parentLayout = itemView.findViewById(R.id.itemMovieConstraintLayout);
         }
     }
 
     //STEP2
     class SeriesItemHolder extends RecyclerView.ViewHolder{
-        TextView tvItemSeriesCompanyName, tvItemSeriesType;
-        ImageView imgItemSeriesImg;
+        TextView movieName, movieType, movieYear;
+        ImageView movieIMG, compIMG;
         ConstraintLayout parentLayout;
         public SeriesItemHolder(@NonNull View itemView) {
             super(itemView);
-            tvItemSeriesCompanyName = itemView.findViewById(R.id.tvItemSeriesCompanyName);
-            tvItemSeriesType = itemView.findViewById(R.id.tvItemSeriesType);
-            imgItemSeriesImg= itemView.findViewById(R.id.tvItemSeriesImg);
-            parentLayout = itemView.findViewById(R.id.itemSeriesConstraintLayout);
+            movieName = itemView.findViewById(R.id.movieName);
+            movieType=itemView.findViewById(R.id.movieType);
+            movieYear=itemView.findViewById(R.id.movieYear);
+            movieIMG=itemView.findViewById(R.id.movieIMG);
+            compIMG=itemView.findViewById(R.id.compIMG);
+            parentLayout = itemView.findViewById(R.id.itemMovieConstraintLayout);
         }
     }
 }

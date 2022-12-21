@@ -4,8 +4,8 @@ public class Movie extends Content{
     String duration;
     String director;
 
-    public Movie(String itemName, String companyName, String type, int imgID,int year, String duration, String director) {
-        super(itemName, companyName, type, imgID,year);
+    public Movie(String itemName, String companyName, String type, int imgID,int compID,int year, String duration, String director) {
+        super(itemName, companyName, type, imgID,compID,year);
         this.duration=duration;
         this.director=director;
     }

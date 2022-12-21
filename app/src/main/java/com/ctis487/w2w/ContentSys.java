@@ -10,10 +10,10 @@ public class ContentSys {
         contentArrayList = new ArrayList<>();
 
         Collections.addAll(contentArrayList,
-                new Movie("Bullet Train","Netflix","Adventure",R.drawable.w2w,2022,"2hrs" ,"James Cameron"),
-                new Serie("WandaVision","Marvel","Comicbook",R.drawable.w2w,2021,1 ,8),
-                new Movie("Batman v Superman","DC","Comicbook",R.drawable.w2w,2022,"3hrs" ,"Jack Snyder"),
-                new Serie("The Last of Us","HBO Max","VideoGame",R.drawable.w2w,2023,1 ,12)
+                new Movie("Extraction","Netflix","Adventure",R.drawable.extr,R.drawable.netf,2022,"2hrs" ,"James Cameron"),
+                new Serie("WandaVision","Marvel","Comicbook",R.drawable.boys,R.drawable.disney,2021,1 ,8),
+                new Serie("The Last of Us","HBO Max","VideoGame",R.drawable.tlou,R.drawable.hbo,2023,1 ,12),
+                new Movie("Batman v Superman","DC","Comicbook",R.drawable.boys,R.drawable.hbo,2022,"3hrs" ,"Jack Snyder")
         );
     }
 
