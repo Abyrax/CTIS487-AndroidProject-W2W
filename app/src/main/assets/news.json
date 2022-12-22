@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Marvel announces Phase 4 lineup",
+    "description": "Marvel Studios has announced its lineup for Phase 4 of the Marvel Cinematic Universe, which includes new movies and TV shows featuring fan-favorite characters like Spider-Man, Doctor Strange, and the Eternals.",
+    "date_published": "2022-06-07",
+    "source": "Marvel Studios"
+  },
+  {
+    "title": "Sandra Bullock to star in female-led Ocean's Eleven spin-off",
+    "description": "Sandra Bullock is set to lead an all-female cast in an Ocean's Eleven spin-off film, titled Ocean's Ocho. The movie will be directed by Nancy Meyers and is set to begin production in early 2023.",
+    "date_published": "2022-03-15",
+    "source": "Variety"
+  },
+  {
+    "title": "HBO Max greenlights Game of Thrones prequel House of the Dragon",
+    "description": "HBO Max has given a straight-to-series order for House of the Dragon, a Game of Thrones prequel set in the world of Westeros. The show will be based on George R.R. Martin's Fire & Blood and will be produced by Martin and Ryan Condal.",
+    "date_published": "2022-01-14",
+    "source": "HBO"
+  },
+  {
+    "title": "Disney announces release dates for upcoming Star Wars movies",
+    "description": "Disney has announced the release dates for several upcoming Star Wars movies, including the final installment of the Skywalker saga and a new trilogy being developed by Rian Johnson. The first movie in the new trilogy is set to release in 2024.",
+    "date_published": "2022-05-01",
+    "source": "Disney"
+  },
+  {
+    "title": "Tom Cruise to shoot movie in space",
+    "description": "Tom Cruise is set to shoot a movie in space with the help of SpaceX and NASA. The movie, which is being produced by Paramount Pictures, will be the first narrative feature film to be shot in space. No details about the plot or release date have been announced.",
+    "date_published": "2022-07-20",
+    "source": "Paramount Pictures"
+  },
+  {
+    "title": "Margot Robbie to star in Barbie movie",
+    "description": "Margot Robbie has been cast as Barbie in a live-action movie based on the popular doll. The movie, which is being produced by Warner Bros., is set to release in 2024 and will follow Barbie as she goes on an adventure in the real world.",
+    "date_published": "2022-09-15",
+    "source": "Warner Bros."
+  }
+]

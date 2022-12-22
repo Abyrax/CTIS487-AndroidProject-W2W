@@ -74,12 +74,11 @@ public class SignActivity extends AppCompatActivity {
                     String Password= psw;
                     boolean resinser = UserTable.insertUser(dbHelper, Name, Username, Password);
                     if (resinser) {
-                        Toast.makeText(SignActivity.this, "Completed.", Toast.LENGTH_SHORT).show();
                         intent = new Intent(SignActivity.this, MainActivity.class);
                         startActivity(intent);
                     }
                 } else {
-                    Toast.makeText(SignActivity.this, "Error.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignActivity.this, "psw's not matching.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
