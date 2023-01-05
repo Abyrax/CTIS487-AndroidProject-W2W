@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -33,7 +34,7 @@ public class HomeActivity extends AppCompatActivity implements CustomRecyclerVie
 
     ActivityHomeBinding binding;
     CustomRecyclerViewAdapter adapter;
-    Dialog dialog;
+    Dialog dialog,newdialog;
 
     private RecyclerView recyclerView;
     private NewsAdapter adapter2;
@@ -48,6 +49,10 @@ public class HomeActivity extends AppCompatActivity implements CustomRecyclerVie
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
+
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.batman);
+
+        mediaPlayer.start();
 
         ContentSys.prepareData();
         adapter = new CustomRecyclerViewAdapter(this, ContentSys.getContentArrayList());
@@ -98,6 +103,27 @@ public class HomeActivity extends AppCompatActivity implements CustomRecyclerVie
 
     public void displayItem(Content con) {
         displayDialog(con);
+    }
+
+    public void displayNew(NewsItem news) {
+        displayNewDialog(news);
+    }
+
+    public void displayNewDialog(NewsItem news){
+        newdialog = new Dialog(this);
+        newdialog.setContentView(R.layout.newdialog);
+        TextView tvDialogName = newdialog.findViewById(R.id.tvDialogName);
+        TextView tvDialogText = newdialog.findViewById(R.id.tvDialogText);
+        Button btnDialogClose = newdialog.findViewById(R.id.btnDialogClose);
+        tvDialogName.setText(news.getTitle());
+        tvDialogText.setText(news.getDescription());
+        btnDialogClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
     }
 
     private String readJSONFromAsset() {

@@ -85,7 +85,6 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView
             itemHolder.parentLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //((MainActivity)context).displayDialog(org);
                     conAdapterInterface.displayItem(con);
                 }
             });

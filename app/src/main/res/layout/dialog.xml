@@ -9,10 +9,10 @@
 
     <TextView
         android:id="@+id/tvDialogName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="385dp"
+        android:layout_height="49dp"
         android:layout_gravity="center"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:layout_weight="1"
         android:gravity="center_horizontal"
         android:text="TextView"
@@ -21,19 +21,20 @@
         android:textStyle="bold|italic" />
 
     <ImageView
-        android:background="@color/bg"
         android:id="@+id/compImg"
-        android:layout_width="323dp"
-        android:layout_height="546dp"
+        android:layout_width="364dp"
+        android:layout_height="584dp"
         android:layout_gravity="center"
         android:layout_weight="1"
+        android:background="@color/bg"
         app:srcCompat="@drawable/w2w" />
 
     <Button
         android:id="@+id/btnDialogClose"
-        android:layout_width="154dp"
-        android:layout_height="wrap_content"
+        android:layout_width="246dp"
+        android:layout_height="72dp"
         android:layout_gravity="center"
         android:layout_weight="1"
-        android:text="Kapat" />
+        android:layout_marginBottom="40dp"
+        android:text="C L O S E" />
 </LinearLayout>
